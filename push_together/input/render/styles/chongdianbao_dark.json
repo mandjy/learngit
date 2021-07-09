@@ -1,0 +1,2264 @@
+{
+  "source-list": {
+    "sankuai": {
+      "url": "sankuai://tile/source?id=vt3&{key}&{aid}",
+      "type": "vector"
+    }
+  },
+  "center": [
+    116.4,
+    39.99,
+    9
+  ],
+  "name": "meituan streets",
+  "version": 4,
+  "fonts-url": "sankuai://tile/font?{key}&{id}&{glyphs}&{aid}",
+  "background": {
+    "alias": "背景面",
+    "color": "#080A09",
+    "visibility": true,
+    "opacity": 0
+  },
+  "style-list": [
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_haiyang_fill_11",
+      "alias": " 海洋面",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "in",
+        "type",
+        "11"
+      ],
+      "fill": {
+        "color": "#080A09",
+        "opacity": 1
+      },
+      "outline": {
+        "color": "#11355d",
+        "width": 1,
+        "opacity": 1
+      },
+      "level": [
+        0,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_chinaisland_fill_40",
+      "alias": "岛屿面",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "40"
+        ]
+      ],
+      "fill": {
+        "color": "#171718",
+        "opacity": 1
+      },
+      "level": [
+        0,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_lake_fill00",
+      "alias": "水系",
+      "order": 0,
+      "interactive": 1,
+      "visibility": false,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "12",
+          "13",
+          "14",
+          "15"
+        ],
+        [
+          "!in",
+          "orderid",
+          126,
+          225,
+          226,
+          320,
+          407,
+          408
+        ]
+      ],
+      "fill": {
+        "color": "#172231",
+        "opacity": 1
+      },
+      "outline": {
+        "color": "#172231",
+        "width": 0.8,
+        "opacity": 1
+      },
+      "level": [
+        2,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_park31",
+      "alias": "公园绿地",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "31"
+        ]
+      ],
+      "fill": {
+        "color": "#223131",
+        "opacity": 1
+      },
+      "level": [
+        8,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_lake_fill11",
+      "alias": "水系",
+      "order": 0,
+      "interactive": 1,
+      "visibility": false,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "12",
+          "13",
+          "14",
+          "15"
+        ],
+        [
+          "in",
+          "orderid",
+          126,
+          225,
+          226,
+          320,
+          407,
+          408
+        ]
+      ],
+      "fill": {
+        "color": "#172231",
+        "opacity": 1
+      },
+      "outline": {
+        "color": "#172231",
+        "width": 0.8,
+        "opacity": 1
+      },
+      "level": [
+        2,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_grass33_fill",
+      "alias": "交通绿化",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "33"
+        ]
+      ],
+      "fill": {
+        "color": "#223131",
+        "opacity": 1
+      },
+      "level": [
+        16,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_grass36_fill",
+      "alias": "隔离带",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "36"
+        ]
+      ],
+      "fill": {
+        "color": "#223131",
+        "opacity": 1
+      },
+      "level": [
+        16,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_guanmulin37_fill",
+      "alias": "灌木林",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "37"
+        ]
+      ],
+      "fill": {
+        "color": "#223131",
+        "opacity": 1
+      },
+      "level": [
+        14,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_runway34_fill",
+      "alias": "运动场跑道",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "34"
+        ]
+      ],
+      "fill": {
+        "color": "#171718",
+        "opacity": 1
+      },
+      "level": [
+        15,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.backRegion",
+      "name": "background_runway35_fill",
+      "alias": "运动场球场",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "35"
+        ]
+      ],
+      "fill": {
+        "color": "#171718",
+        "opacity": 1
+      },
+      "level": [
+        15,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.customPoint",
+      "name": "mingandaoyu_111",
+      "alias": "陆地",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "mingandaoyu"
+        ]
+      ],
+      "circle": {
+        "radius": 0.6,
+        "color": "#F0F0F0"
+      },
+      "level": [
+        0,
+        4
+      ]
+    },
+    {
+      "source": "polygon.sankuai.customPoint",
+      "name": "zengmuansha",
+      "alias": "陆地",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "zengmuansha"
+        ]
+      ],
+      "circle": {
+        "radius": 1.3,
+        "color": "#F0F0F0"
+      },
+      "level": [
+        0,
+        4
+      ]
+    },
+    {
+      "alias": "市界线",
+      "interactive": 1,
+      "level": [
+        5,
+        12
+      ],
+      "line": {
+        "color": "#619A8F",
+        "opacity": 1,
+        "order": 12.1,
+        "width": 0.5
+      },
+      "name": "admin_level_shijie",
+      "order": 0,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "5"
+        ]
+      ],
+      "source": "line.sankuai.adminLine",
+      "tags": [
+        "adminline",
+        "level_shijie"
+      ],
+      "visibility": true
+    },
+    {
+      "source": "line.sankuai.adminLine",
+      "name": "admin_level_4",
+      "alias": "省界线",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "112"
+        ]
+      ],
+      "line": {
+        "color": "#619A8F",
+        "width": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": 1
+            },
+            {
+              "level": 5,
+              "value": 1
+            },
+            {
+              "level": 12,
+              "value": 1
+            }
+          ]
+        },
+        "opacity": 1
+      },
+      "level": [
+        3,
+        10
+      ]
+    },
+    {
+      "source": "line.sankuai.adminLine",
+      "name": "admin_level_2",
+      "alias": "中国国界",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "type",
+          "110"
+        ]
+      ],
+      "line": {
+        "color": "#05F893",
+        "width": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 0,
+              "value": 3
+            },
+            {
+              "level": 5,
+              "value": 3
+            },
+            {
+              "level": 12,
+              "value": 4
+            }
+          ]
+        },
+        "opacity": 1
+      },
+      "level": [
+        0,
+        6
+      ]
+    },
+    {
+      "source": "polygon.sankuai.customPoint",
+      "name": "guojiexian",
+      "alias": "guojiexian",
+      "order": 0,
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "guojiexian"
+        ]
+      ],
+      "circle": {
+        "radius": 2,
+        "color": "#F0F0F0"
+      },
+      "level": [
+        0,
+        2
+      ]
+    },
+    {
+      "source": "polygon.sankuai.buildRegion",
+      "name": "building",
+      "alias": "建筑物底",
+      "order": 30,
+      "interactive": 1,
+      "visibility": true,
+      "fill": {
+        "translate": [
+          2,
+          2
+        ],
+        "color": "#1C1C1C",
+        "opacity": 0
+      },
+      "level": [
+        15,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.buildRegion",
+      "name": "building_top",
+      "alias": "建筑物顶",
+      "order": 30,
+      "interactive": 1,
+      "visibility": true,
+      "fill": {
+        "opacity": 1,
+        "color": "#1C1C1C"
+      },
+      "outline": {
+        "color": "#141414",
+        "opacity": 1
+      },
+      "level": [
+        15,
+        20
+      ]
+    },
+    {
+      "source": "polygon.sankuai.buildRegion",
+      "name": "building_extrusion",
+      "alias": "建筑物墙面",
+      "order": 30,
+      "interactive": 1,
+      "visibility": true,
+      "extrusion": {
+        "pattern": "building_texture",
+        "color": "#EBEAE8 ",
+        "opacity": 0.6
+      },
+      "level": [
+        15,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "!in",
+          "rendername",
+          "香港",
+          "澳门",
+          "黑河",
+          "丹东",
+          "延边朝鲜族自治州",
+          "桃园",
+          "新北",
+          "阿坝藏族羌族自治州",
+          "阿拉善盟",
+          "巴音郭楞蒙古自治州",
+          "博尔塔拉蒙古自治州",
+          "昌吉回族自治州",
+          "楚雄彝族自治州",
+          "大理白族自治州",
+          "德宏傣族景颇族自治州",
+          "迪庆藏族自治州",
+          "恩施土家族苗族自治州",
+          "甘南藏族自治州",
+          "甘孜藏族自治州",
+          "果洛藏族自治州",
+          "海北藏族自治州",
+          "海南藏族自治州",
+          "海西蒙古族藏族自治州",
+          "红河哈尼族彝族自治州",
+          "黄南藏族自治州",
+          "克孜勒苏柯尔克孜自治州",
+          "凉山彝族自治州",
+          "临夏回族自治州",
+          "怒江傈僳族自治州",
+          "黔东南苗族侗族自治州",
+          "黔南布依族苗族自治州",
+          "黔西南布依族苗族自治州",
+          "文山壮族苗族自治州",
+          "西双版纳傣族自治州",
+          "锡林郭勒盟",
+          "湘西土家族苗族自治州",
+          "兴安盟",
+          "伊犁哈萨克自治州",
+          "三沙",
+          "玉树藏族自治州",
+          "大兴安岭地区",
+          "阿克苏地区",
+          "喀什地区",
+          "和田地区",
+          "塔城地区",
+          "阿里地区",
+          "阿勒泰地区"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0,
+          0.2
+        ],
+        "anchor": "top",
+        "size": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#e0e0e0"
+            },
+            {
+              "level": 7,
+              "value": "#e0e0e0"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市地区州盟",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "阿坝藏族羌族自治州",
+          "阿拉善盟",
+          "巴音郭楞蒙古自治州",
+          "博尔塔拉蒙古自治州",
+          "昌吉回族自治州",
+          "楚雄彝族自治州",
+          "大理白族自治州",
+          "德宏傣族景颇族自治州",
+          "迪庆藏族自治州",
+          "恩施土家族苗族自治州",
+          "甘南藏族自治州",
+          "甘孜藏族自治州",
+          "果洛藏族自治州",
+          "海北藏族自治州",
+          "海南藏族自治州",
+          "海西蒙古族藏族自治州",
+          "红河哈尼族彝族自治州",
+          "黄南藏族自治州",
+          "克孜勒苏柯尔克孜自治州",
+          "凉山彝族自治州",
+          "临夏回族自治州",
+          "怒江傈僳族自治州",
+          "黔东南苗族侗族自治州",
+          "黔南布依族苗族自治州",
+          "黔西南布依族苗族自治州",
+          "文山壮族苗族自治州",
+          "西双版纳傣族自治州",
+          "锡林郭勒盟",
+          "湘西土家族苗族自治州",
+          "兴安盟",
+          "伊犁哈萨克自治州",
+          "玉树藏族自治州",
+          "大兴安岭地区",
+          "阿克苏地区",
+          "喀什地区",
+          "和田地区",
+          "塔城地区",
+          "阿里地区",
+          "阿勒泰地区"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0,
+          0.2
+        ],
+        "anchor": "top",
+        "size": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#e0e0e0"
+            },
+            {
+              "level": 7,
+              "value": "#e0e0e0"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": " ",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市黑河",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "黑河"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          -1,
+          0
+        ],
+        "anchor": "right",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "city",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市延边",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "延边朝鲜族自治州"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          -1,
+          0
+        ],
+        "anchor": "right",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": " ",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市丹东",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "丹东"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          -1,
+          0
+        ],
+        "anchor": "right",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "city",
+        "offset": [
+          -5,
+          0
+        ],
+        "anchor": "right",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市桃园",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "桃园"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          -1,
+          0
+        ],
+        "anchor": "right",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市新北",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "新北"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0.5,
+          0.5
+        ],
+        "anchor": "top-left",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 5,
+              "value": 12
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_地级市三沙",
+      "alias": "地级市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190104"
+        ],
+        [
+          "in",
+          "rendername",
+          "三沙"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          1.5,
+          0
+        ],
+        "anchor": "bottom",
+        "size": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 5,
+              "value": 10
+            },
+            {
+              "level": 7,
+              "value": 13.5
+            },
+            {
+              "level": 8,
+              "value": 15
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 6,
+              "value": "#827E7E"
+            },
+            {
+              "level": 7,
+              "value": "#827E7E"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "city",
+        "ignore-placement": false
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.poiLabel",
+      "name": "place_label_tiananmen_10",
+      "alias": "天安门",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "rendername",
+          "天安门"
+        ]
+      ],
+      "text": {
+        "order": 500,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 14,
+              "value": " "
+            },
+            {
+              "level": 15,
+              "value": " "
+            }
+          ]
+        },
+        "offset": [
+          0,
+          0.8
+        ],
+        "anchor": "top",
+        "size": 12,
+        "color": "#3C3C3C",
+        "halo-color": "#fff",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "icon": {
+        "name": "tiananmen_da",
+        "ignore-placement": false
+      },
+      "level": [
+        10,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_省会",
+      "alias": "省会城市",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23120000"
+        ],
+        [
+          "!in",
+          "rendername",
+          "香港",
+          "广州",
+          "台北"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0,
+          0.2
+        ],
+        "anchor": "top",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 3,
+              "value": 12
+            },
+            {
+              "level": 6,
+              "value": 14
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": "#FFF"
+            },
+            {
+              "level": 5,
+              "value": "#FFF"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        5,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_香港",
+      "alias": "省会城市-香港",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23120000"
+        ],
+        [
+          "in",
+          "rendername",
+          "香港"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0.3,
+          0
+        ],
+        "anchor": "left",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 12
+            },
+            {
+              "level": 6,
+              "value": 14
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": "#FFF"
+            },
+            {
+              "level": 5,
+              "value": "#FFF"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        4,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_省会广州",
+      "alias": "省会城市-广州",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23120000"
+        ],
+        [
+          "in",
+          "rendername",
+          "广州"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0.2,
+          -0.2
+        ],
+        "anchor": "bottom",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 12
+            },
+            {
+              "level": 6,
+              "value": 14
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": "#fff"
+            },
+            {
+              "level": 5,
+              "value": "#fff"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        4,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_省会台北",
+      "alias": "省会城市-台北",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23120000"
+        ],
+        [
+          "in",
+          "rendername",
+          "台北"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": [
+                0,
+                0.2
+              ]
+            },
+            {
+              "level": 5,
+              "value": [
+                0.5,
+                0
+              ]
+            }
+          ]
+        },
+        "anchor": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": "top"
+            },
+            {
+              "level": 5,
+              "value": "left"
+            }
+          ]
+        },
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 12
+            },
+            {
+              "level": 6,
+              "value": 14
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": "#FFF"
+            },
+            {
+              "level": 5,
+              "value": "#FFF"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "icon": {
+        "name": "",
+        "ignore-placement": true,
+        "allow-overlap": true
+      },
+      "level": [
+        4,
+        9
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_首都",
+      "alias": "首都-北京",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23110000"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "offset": [
+          0,
+          0.5
+        ],
+        "anchor": "top",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 14
+            },
+            {
+              "level": 6,
+              "value": 16
+            }
+          ]
+        },
+        "color": {
+          "rate": 1,
+          "steps": [
+            {
+              "level": 4,
+              "value": "#FFF"
+            },
+            {
+              "level": 5,
+              "value": "#FFF"
+            }
+          ]
+        },
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "icon": {
+        "name": "provincial_capital_2",
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        4,
+        9
+      ]
+    },
+    {
+      "alias": "省名",
+      "interactive": 1,
+      "level": [
+        2,
+        4
+      ],
+      "name": "place_label_province",
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "190102"
+        ],
+        [
+          "!in",
+          "name",
+          "香港",
+          "澳門"
+        ]
+      ],
+      "source": "point.sankuai.placeLabel",
+      "tags": [
+        "label",
+        "placelabel",
+        "province"
+      ],
+      "text": {
+        "allow-overlap": true,
+        "anchor": "bottom",
+        "color": "#fff",
+        "field": "{rendername}",
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "halo-color": "rgba(255,255,255,1)",
+        "halo-width": 0,
+        "ignore-placement": false,
+        "offset": [
+          0,
+          0.6
+        ],
+        "opacity": 1,
+        "order": 450,
+        "size": 12
+      },
+      "visibility": true
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_province_香港",
+      "alias": "香港",
+      "interactive": 1,
+      "visibility": false,
+      "selection": [
+        "and",
+        [
+          "in",
+          "value",
+          "province"
+        ],
+        [
+          "in",
+          "name",
+          "香港"
+        ]
+      ],
+      "text": {
+        "order": 500,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "anchor": "left",
+        "size": 10,
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        3,
+        3.999999
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_province_澳门",
+      "alias": "澳门",
+      "interactive": 1,
+      "visibility": false,
+      "selection": [
+        "and",
+        [
+          "in",
+          "value",
+          "province"
+        ],
+        [
+          "in",
+          "rendername",
+          "澳門"
+        ]
+      ],
+      "text": {
+        "order": 500,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "anchor": "right",
+        "size": 10,
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1,
+        "ignore-placement": false,
+        "allow-overlap": true
+      },
+      "level": [
+        3,
+        3.999999
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_country",
+      "alias": "国家标注",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23100000"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": 20,
+        "color": "#Fff",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      },
+      "level": [
+        0,
+        2
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_island_4",
+      "alias": "岛屿",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23170000"
+        ],
+        [
+          "in",
+          "rendername",
+          "中沙群岛",
+          "东沙群岛",
+          "西沙群岛",
+          "南沙群岛",
+          "曾母暗沙",
+          "澎湖列岛",
+          "黄岩岛(民主礁)"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 8
+            },
+            {
+              "level": 7,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "anchor": "right",
+        "offset": [
+          0,
+          -1
+        ],
+        "opacity": 1
+      },
+      "level": [
+        4,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_island_4_diaoyudao",
+      "alias": "岛屿",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23170000"
+        ],
+        [
+          "in",
+          "rendername",
+          "钓鱼岛"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 8
+            },
+            {
+              "level": 7,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "anchor": "right",
+        "offset": [
+          -1,
+          0
+        ],
+        "opacity": 1
+      },
+      "level": [
+        4,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_island_4_chiweiyu",
+      "alias": "岛屿",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23170000"
+        ],
+        [
+          "in",
+          "rendername",
+          "赤尾屿"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 8
+            },
+            {
+              "level": 7,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 1,
+        "anchor": "left",
+        "offset": [
+          0,
+          -1
+        ],
+        "opacity": 1
+      },
+      "level": [
+        4,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_island_4_huangweiyu",
+      "alias": "岛屿",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23170000"
+        ],
+        [
+          "in",
+          "rendername",
+          "黄尾屿"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 8
+            },
+            {
+              "level": 7,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 1,
+        "anchor": "right",
+        "offset": [
+          0,
+          -1
+        ],
+        "opacity": 1
+      },
+      "level": [
+        4,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_island_4_1",
+      "alias": "岛屿",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23170000"
+        ],
+        [
+          "in",
+          "rendername",
+          "台湾岛",
+          "海南岛"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 4,
+              "value": 8
+            },
+            {
+              "level": 7,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 1,
+        "anchor": "right",
+        "offset": [
+          3,
+          1
+        ],
+        "opacity": 1
+      },
+      "level": [
+        4,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_sea",
+      "alias": "渤海",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23180000"
+        ],
+        [
+          "in",
+          "rendername",
+          "渤海"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 2,
+              "value": 9.5
+            },
+            {
+              "level": 3,
+              "value": 10
+            }
+          ]
+        },
+        "color": "#385267",
+        "anchor": "center",
+        "offset": [
+          0,
+          0
+        ],
+        "halo-color": "#202020",
+        "halo-width": 1,
+        "opacity": 1
+      },
+      "level": [
+        2,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_sea_3海",
+      "alias": "海洋",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23180000"
+        ],
+        [
+          "in",
+          "rendername",
+          "黄海",
+          "东海",
+          "南海"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": 10,
+        "color": "#385267",
+        "anchor": "center",
+        "offset": [
+          0,
+          0
+        ],
+        "halo-color": "#202020",
+        "halo-width": 1,
+        "opacity": 1
+      },
+      "level": [
+        2,
+        20
+      ]
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_continent",
+      "alias": "大洲",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23090000"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 7,
+              "value": 22
+            },
+            {
+              "level": 11,
+              "value": 24
+            }
+          ]
+        },
+        "color": "#827E7E",
+        "halo-color": "rgba(23,23,24,1)",
+        "halo-width": 0.8,
+        "opacity": 1
+      }
+    },
+    {
+      "source": "point.sankuai.placeLabel",
+      "name": "place_label_ocean_12",
+      "alias": "大洋",
+      "interactive": 1,
+      "visibility": true,
+      "selection": [
+        "and",
+        [
+          "in",
+          "kind",
+          "23180000"
+        ],
+        [
+          "in",
+          "rendername",
+          "太平洋",
+          "大西洋",
+          "北冰洋",
+          "印度洋"
+        ]
+      ],
+      "text": {
+        "order": 450,
+        "font": [
+          "Source Han Sans CN Normal"
+        ],
+        "field": "{rendername}",
+        "size": {
+          "rate": 1.2,
+          "steps": [
+            {
+              "level": 7,
+              "value": 14
+            },
+            {
+              "level": 11,
+              "value": 24
+            }
+          ]
+        },
+        "color": "#385267",
+        "halo-color": "#202020",
+        "halo-width": 1,
+        "opacity": 1
+      }
+    }
+  ]
+}

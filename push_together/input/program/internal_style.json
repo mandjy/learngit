@@ -1,0 +1,13 @@
+{
+  "style-list": [
+    {
+      "source": "polygon.sankuai.nothing",
+      "name": "3d_sky",
+      "alias": "天空",
+      "order": 101,
+      "sky": {
+        "image": "3D_sky"
+      }
+    }
+  ]
+}

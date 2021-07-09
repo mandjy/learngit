@@ -1,0 +1,73 @@
+{
+	"color-list": [
+      { "lightseagreen"  : "#008E9C" },
+      { "green"          : "#009B6B" },
+      { "darkblue"       : "#156097" },
+      { "limegreen"      : "#55B02D" },
+      { "yellowgreen"    : "#92BF1E" },
+      { "lavender"       : "#A29BBC" },
+      { "purple"         : "#A81B81" },
+      { "indianred"      : "#C23931" },
+      { "goldenrod"      : "#D19708" },
+      { "rosybrowm"      : "#D4A7A1" },
+      { "silver"         : "#DCDCDC" },
+      { "violet"         : "#DE82B3" },
+      { "deeppink"       : "#E40177" },
+      { "orange"         : "#E46022" },
+      { "wheat"          : "#F6C582" },
+      { "yellow"         : "#F6E614" },
+      { "blue"           : "#0033FF" },
+      { "springgreen"    : "#00CA6A" },
+      { "aqua"           : "#00CCFF" },
+      { "deepskyblue"    : "#059BD8" },
+      { "mediumblue"     : "#0816B5" },
+      { "dodgerblue"     : "#1668A2" },
+      { "steelblue"      : "#259CBD" },
+      { "darkturquoise"  : "#27D4C1" },
+      { "skyblue"        : "#2897E6" },
+      { "forestgreen"    : "#39AA62" },
+      { "midnightblue"   : "#3B2F6F" },
+      { "dimgray"        : "#42363A" },
+      { "indigo"         : "#541384" }
+	],                               
+	
+	"color-style": [
+	{
+		"type":"subway",
+		"{city}":"beijing",
+		"values": [
+			{ 
+				"{name}":"1号线",
+				"value":"green"
+			},
+			{ 
+				"{name}":"2号线",
+				"value":"lime"
+			},
+			{ 
+				"{name}":"3号线",
+				"value":"darkbule"
+			}
+		]
+	},
+	{
+		"type":"subway",
+		"{city}":"nanjing",
+		"values": [
+			{ 
+				"{name}":"1号线",
+				"value":"lightseagreen"
+			},
+			{ 
+				"{name}":"2号线",
+				"value":"lime"
+			},
+			{ 
+				"{name}":"3号线",
+				"value":"darkbule"
+			}
+		]
+	}
+	]
+
+}                               
